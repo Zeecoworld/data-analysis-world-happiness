@@ -1,9 +1,11 @@
+import os
 import pandas as pd
 import streamlit as st
 import plotly.express as px
 from PIL import Image
 
-
+path = os.path.dirname(__file__)
+mydata = path+'/world-happiness-report-2021.csv
 
 st.set_page_config(page_title='World Happiness Results')
 
@@ -15,7 +17,7 @@ st.subheader('DATA ANALYSIS USING DATA FROM KAGGLE!!!')
 
 # DATA = 'world-happiness-report-2021.csv'
 
-df = pd.read_csv('world-happiness-report-2021.csv')
+df = pd.read_csv(mydata)
 
 df_country = df["Country name"]
 
