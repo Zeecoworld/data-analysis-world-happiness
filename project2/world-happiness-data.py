@@ -13,9 +13,9 @@ st.subheader('DATA ANALYSIS USING DATA FROM KAGGLE!!!')
 
 ## LOAD DATASETS /DATAFRAMES...
 
-DATA = 'world-happiness-report-2021.csv'
+# DATA = 'world-happiness-report-2021.csv'
 
-df = pd.read_csv(DATA)
+df = pd.read_csv('world-happiness-report-2021.csv')
 
 df_country = df["Country name"]
 
